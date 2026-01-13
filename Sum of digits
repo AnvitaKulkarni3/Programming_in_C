@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+	int number, mod, count=0;
+	int sum=0;
+	scanf("%d", &number);
+	while(number!=0){
+		mod=number%10;
+		sum=sum+mod;
+		number=number/10;
+		count++;
+	}
+	if(count==5){
+	printf("%d", sum);
+	} else {
+		printf("Invalid input");
+	}
+}
